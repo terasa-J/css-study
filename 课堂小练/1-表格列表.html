@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>表格学习</title>
+  <style>
+    table,
+    th,
+    td {
+      width: 800px;
+      height: 30px;
+      border: 1px solid green;
+      text-align: center;
+      /* 重叠边框合并 */
+      border-collapse: collapse;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <table border="1" cellspacing="0" height="100" width="500" align="center"> -->
+  <table align="center" cellspacing="0">
+    <thead>
+      <tr>
+        <th>排名</th>
+        <th>关键词</th>
+        <th>趋势</th>
+        <th>今日搜索 </th>
+        <th>最近七日 </th>
+        <th>相关连接</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>鬼吹灯</td>
+        <td><img src="./imgs/down.jpg" alt="替换文本"> </td>
+        <td>345</td>
+        <td>123</td>
+        <td>
+          <a href="#">贴吧</a>
+          <a href="#">图片</a>
+          <a href="#">百科</a>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td> 盗墓笔记</td>
+        <td><img src="./imgs/down.jpg" alt="替换文本"></td>
+        <td>124</td>
+        <td>6666</td>
+        <td>
+          <a href="#">贴吧</a>
+          <a href="#">图片</a>
+          <a href="#">百科</a>
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>西游记</td>
+        <td>
+          <img src="./imgs/up.jpg" alt="替换文本">
+        </td>
+        <td>1245</td>
+        <td>666666</td>
+        <td>
+          <a href="#">贴吧</a>
+          <a href="#">图片</a>
+          <a href="#">百科</a>
+        </td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>合并单元格</td>
+        <td rowspan="2">
+          <img src="./imgs/up.jpg" alt="替换文本">
+        </td>
+        <td>1245</td>
+        <td>666666</td>
+        <td>
+          <a href="#">贴吧</a>
+          <a href="#">图片</a>
+          <a href="#">百科</a>
+        </td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>合并单元格</td>
+        <td colspan="2" align="center">1245789</td>
+        <td>
+          <a href="#">贴吧</a>
+          <a href="#">图片</a>
+          <a href="#">百科</a>
+        </td>
+      </tr>
+    </tbody>
+
+  </table>
+
+
+  <h4>无序列表</h4>
+  <ul>
+    <li>ceshi </li>
+    <li>ceshi </li>
+    <li>ceshi </li>
+    <li>ceshi </li>
+  </ul>
+
+  <h4>有序列表</h4>
+  <ol>
+    <li>测试</li>
+    <li>测试</li>
+    <li>测试</li>
+  </ol>
+
+  <h4>自定义列表</h4>
+  <dl>
+    <dt>关于我们</dt>
+    <dd>yes</dd>
+    <dt>联系他们</dt>
+    <dd>电话</dd>
+    <dd>email</dd>
+    <dd>地址</dd>
+  </dl>
+
+</body>
+
+</html>

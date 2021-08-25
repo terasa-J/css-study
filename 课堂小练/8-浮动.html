@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .left,
+    .right {
+      /* 2个块级元素之间有个横线 */
+      /* display: inline-block; */
+      /* 不会存在横线 */
+      float: left;
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+    }
+
+    .right {
+      float: right;
+    }
+
+    table {
+      width: 500px;
+      height: 120px;
+      text-align: center;
+    }
+
+    th,
+    td {
+      border-bottom: 2px solid #eee;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="left">左青龙</div>
+  <div class="right">右白虎</div>
+
+  <!-- <div>
+    <table cellspacing=0>
+      <tr>
+        <th>指标</th>
+        <th>本年累计</th>
+        <th>同比变动</th>
+        <th>全年目标</th>
+        <th>目标完成率</th>
+      </tr>
+      <tr>
+        <td>新增客户量</td>
+        <td>35万元</td>
+        <td>+3.5%</td>
+        <td>100万元</td>
+        <td>80%</td>
+      </tr>
+      <tr>
+        <td>30天活跃客户量</td>
+        <td>35万元</td>
+        <td>+3.5%</td>
+        <td>100万元</td>
+        <td>80%</td>
+      </tr>
+    </table>
+  </div> -->
+</body>
+
+</html>
