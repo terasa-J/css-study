@@ -2,3 +2,72 @@
   margin: 0;
   padding: 0;
 }
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.w{
+  width: 1200px;
+  margin: 0 auto;
+}
+.header{
+  height: 42px;
+  background: #eee;
+  margin: 30px auto;
+}
+.logo{
+  float: left;
+
+  width: 198px;
+  height: 42px;
+}
+.nav{
+  /* 需要放在同一行，使用浮动，所有元素logo都要浮动，否则不生效 */
+  float: left;
+  height: 42px;
+  margin-left: 40px;
+}
+ul li {
+  float: left;
+  margin: 0 10px;
+}
+ul li a{
+  /* 转成块元素，指定高度宽度 */
+  display: block;
+  height: 42px;
+  /* 不指定宽度，因为每个文字长度不一样，使用padding */
+  padding: 0 10px;
+  line-height: 42px;
+  font-size: 18px;
+  color: #050505;
+}
+ul li a:hover {
+  border-bottom: 2px solid #00a4ff;
+  color: #00a4ff;
+}
+.search{
+  /* 一浮全浮：否则没有效果 */
+  float: left;
+  width: 400px;
+  height: 42px;
+  margin-left: 40px;
+}
+.search input{
+  float: left;
+  width: 345px;
+  height: 40px;
+  border: 1px solid #00a4ff;
+  border-right: 0;
+}
+.search button{
+  /* 因为表单元素属于行内块元素，之间会有空隙。这里加上浮动。
+    .search input也加上  float: left;
+  */
+  float: left;
+  width: 50px;
+  height: 42px;
+  background-image: url(images/btn.png);
+  border: 0;
+}
