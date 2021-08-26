@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+body{
+  background-color: #f3f5f7;
+}
 li{
   list-style: none;
 }
@@ -27,7 +30,7 @@ a{
   /* 需要放在同一行，使用浮动，所有元素logo都要浮动，否则不生效 */
   float: left;
   height: 42px;
-  margin-left: 40px;
+  margin-left: 50px;
 }
 ul li {
   float: left;
@@ -52,7 +55,7 @@ ul li a:hover {
   float: left;
   width: 400px;
   height: 42px;
-  margin-left: 40px;
+  margin-left: 70px;
 }
 .search input{
   float: left;
@@ -70,4 +73,10 @@ ul li a:hover {
   height: 42px;
   background-image: url(images/btn.png);
   border: 0;
+}
+.user{
+  float: right;
+  margin-right: 30px;
+  font-size: 14px;
+  color: #807c7c;
 }
