@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>隐藏+定位position</title>
+  <style>
+    .tudou{
+      position: relative;
+      width: 444px;
+      height: 320px;
+      margin: 30px auto;
+    }
+    .tudou img,
+    .mask{
+      width: 100%;
+      height: 100%;
+    }
+    .tudou img{
+    
+    }
+    .mask{
+      /* 初始时先隐藏 */
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background:rgba(0, 0, 0, .4) url(imgs/arr.png) no-repeat center;
+    }
+    /* 当鼠标经过tudou，遮罩显示出来 */
+    .tudou:hover .mask{
+      display: block;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="tudou">
+    <div class="mask"></div>
+    <img src="imgs/tudou.jpg" alt="">
+  </div>
+</body>
+</html>
