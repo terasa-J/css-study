@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>三角</title>
+  <style>
+    .pink {
+      width: 0;
+      height: 0;
+      line-height: 0;
+      font-size: 0;
+      /* border: 50px solid transparent; */
+      border-top: 50px solid orange;
+      border-bottom: 50px solid orange;
+      border-left: 50px solid palevioletred;
+      border-right: 50px solid palevioletred;
+    }
+
+    .jd {
+      position: relative;
+      width: 100px;
+      height: 150px;
+      background: pink;
+      margin: 50px auto;
+    }
+
+    .jd span {
+      position: absolute;
+      top: -20px;
+      right: 10px;
+      width: 0;
+      height: 0;
+      line-height: 0;
+      font-size: 0;
+      border: 10px solid transparent;
+      border-bottom: 10px solid pink;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="pink"></div>
+  <div class="jd">
+    <span></span>
+  </div>
+</body>
+
+</html>
