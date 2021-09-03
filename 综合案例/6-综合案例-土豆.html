@@ -1,40 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>隐藏display+定位position</title>
   <style>
-    .tudou{
+    .tudou,
+    .tudou-wei {
       position: relative;
       width: 444px;
       height: 320px;
       margin: 30px auto;
     }
+
     .tudou img,
-    .mask{
+    .tudou-wei img {
       width: 100%;
       height: 100%;
     }
-    .mask{
+
+    .mask,
+    .tudou-wei::before {
       /* 初始时先隐藏 */
+      content: '';
       display: none;
       position: absolute;
       top: 0;
       left: 0;
-      background:rgba(0, 0, 0, .4) url(imgs/arr.png) no-repeat center;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, .4) url(imgs/arr.png) no-repeat center;
     }
+
     /* 当鼠标经过tudou，遮罩显示出来 */
-    .tudou:hover .mask{
+    .tudou:hover .mask,
+    .tudou-wei:hover::before {
       display: block;
       cursor: pointer;
     }
   </style>
 </head>
+
 <body>
+  <h4>使用增加一个遮罩层的方式解决</h4>
   <div class="tudou">
     <div class="mask"></div>
     <img src="imgs/tudou.jpg" alt="">
   </div>
+
+  <h4>使用伪元素实现</h4>
+  <div class="tudou-wei">
+    <img src="imgs/tudou.jpg" alt="">
+  </div>
 </body>
+
 </html>
