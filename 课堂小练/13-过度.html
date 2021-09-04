@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>过渡</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .box{
+      width: 200px;
+      height: 200px;
+      background: #f00;
+      /* 过渡效果 */
+      transition: width 0.5s;
+    }
+    .box:hover{
+      width: 500px;
+    }
+
+    .bar{
+      width: 200px;
+      height: 20px;
+      border: 1px solid #f00;
+      border-radius: 10px;
+      padding: 1px;
+    }
+    .bar_in{
+      width: 20%;
+      height: 100%;
+      background: #f00;
+      border-radius: 10px;
+       /* 谁做过渡给谁加 */
+      transition: all .5s;
+    }
+    .bar:hover .bar_in{
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h4>过渡</h4>
+  <div class="box"></div>
+  <h4>进度条</h4>
+  <div class="bar">
+    <div class="bar_in"></div>
+  </div>
+</body>
+</html>
