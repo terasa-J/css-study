@@ -92,6 +92,10 @@ a{
   font-size: 14px;
   color: #807c7c;
 }
+.user img{
+  /* 图片与文字垂直居中 */
+  vertical-align: middle;
+}
 /* banner区域 */
 .banner{
   height: 421px;

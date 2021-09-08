@@ -7,6 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>三角</title>
   <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
     .pink {
       width: 0;
       height: 0;
@@ -38,6 +42,50 @@
       border: 10px solid transparent;
       border-bottom: 10px solid pink;
     }
+
+    .strong{
+      width: 0;
+      height: 0;
+      margin: 100px auto;
+      border-top: 100px solid transparent;
+      border-bottom: 0 solid orange;
+      border-left: 0 solid palevioletred;
+      border-right: 50px solid palevioletred;
+    }
+
+    .price{
+      margin: 50px auto;
+      width: 150px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      border: 1px solid #f00;
+    }
+    .miaosha{
+      position: relative;
+      float: left;
+      width: 90px;
+      height: 100%;
+      font-weight: 700;
+      color: #fff;
+      background: #f00;
+    }
+    .miaosha i{
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-color: transparent #fff transparent transparent;
+      border-style: solid;
+      border-width: 30px 15px 0 0;
+    }
+    .origin{
+      font-size: 14px;
+      color: #ccc;
+      text-decoration: line-through;
+      background-color: #fff;
+    }
   </style>
 </head>
 
@@ -45,6 +93,15 @@
   <div class="pink"></div>
   <div class="jd">
     <span></span>
+  </div>
+  <!-- 不规则三角形 -->
+  <div class="strong"></div>
+  <div class="price">
+    <span class="miaosha">
+      $666
+      <i></i>
+    </span>
+    <span class="origin">$88</span>
   </div>
 </body>
 
